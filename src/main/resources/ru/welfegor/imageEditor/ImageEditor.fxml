@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root dividerPositions="0.7001909611712285" orientation="VERTICAL" type="SplitPane" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <items>
+      <VBox>
+         <children>
+            <VBox>
+               <children>
+                  <HBox>
+                     <children>
+                        <Button fx:id="floatButton" mnemonicParsing="false" text="float" />
+                        <Button fx:id="intButton" mnemonicParsing="false" text="int" />
+                        <Button fx:id="stringButton" mnemonicParsing="false" text="string" />
+                        <Button fx:id="inputButton" mnemonicParsing="false" text="image" />
+                        <Button fx:id="addImageButton" mnemonicParsing="false" text="Входное изображение" />
+                        <Button fx:id="addTextButton" mnemonicParsing="false" text="Добавить текст" />
+                        <Button fx:id="grayButton" mnemonicParsing="false" text="Gray filter" />
+                        <Button fx:id="brightnessButton" mnemonicParsing="false" text="Brightness" />
+                        <Button fx:id="sepiaButton" mnemonicParsing="false" text="Sepia" />
+                        <Button fx:id="invertButton" mnemonicParsing="false" text="Invert Filter" />
+                        <Button fx:id="blurButton" mnemonicParsing="false" text="Blur Filter" />
+                        <Button fx:id="moveButton" mnemonicParsing="false" text="Transform Move" />
+                        <Button fx:id="scaleButton" mnemonicParsing="false" text="Transform Scale" />
+                        <Button fx:id="rotateButton" mnemonicParsing="false" text="Transform Rotate" />
+                        <Button fx:id="outputButton" mnemonicParsing="false" text="Конечное изображение" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <ScrollPane fitToHeight="true" fitToWidth="true" minViewportHeight="200.0" minViewportWidth="200.0" prefViewportHeight="200.0" prefViewportWidth="200.0" VBox.vgrow="ALWAYS">
+               <content>
+                  <AnchorPane fx:id="nodeContainer" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="40.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <ScrollPane fitToHeight="true" fitToWidth="true">
+         <content>
+            <ImageView fx:id="globalOutputImageView" fitHeight="180.0" fitWidth="420.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+         </content>
+      </ScrollPane>
+   </items>
+</fx:root>
